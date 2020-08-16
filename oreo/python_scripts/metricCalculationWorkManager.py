@@ -23,7 +23,7 @@ def run_command(cmd, outFile, errFile):
                          stderr=fe,
                          universal_newlines=True
                          )
-    
+    p.wait()
    # while (True):
    #     returncode = p.poll()  # returns None while subprocess is running
    #     outputLine = p.stdout.readline()
